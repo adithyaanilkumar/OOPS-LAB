@@ -8,14 +8,15 @@ public class Main
      FileWriter fout=null;
      try 
      {
-        fin = new FileReader("output.txt");
+        fin = new FileReader("hello.txt");
         fout=new FileWriter("copy.txt");
      } 
      catch (IOException e) 
      {
         System.out.println("cant read the file");
      }
-     try{System.out.println("content of output.txt");
+     try{
+        System.out.println("content of output.txt");
         do
         {   
             i= fin.read();
@@ -25,7 +26,7 @@ public class Main
                 System.out.print((char)i);
             }
         }while(i != -1);
-        }
+      }
      catch(IOException e)
      {
         System.out.println("error in reading file or writting file");
