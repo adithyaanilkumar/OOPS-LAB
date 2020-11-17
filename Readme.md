@@ -36,8 +36,7 @@ Create a branch
 Run the program using:
 
 ```
-gcc program_name.c -o program_name
-./program_name.exe
+java program_name.java
 ```
 
 Make your changes
